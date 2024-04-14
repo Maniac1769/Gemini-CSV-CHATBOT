@@ -1,6 +1,8 @@
 import streamlit as st
 import pandas as pd
+import os
 from pandasai import SmartDataframe
+from pandasai.llm import BambooLLM
 from pandasai.llm import GooglePalm
 import matplotlib
 
