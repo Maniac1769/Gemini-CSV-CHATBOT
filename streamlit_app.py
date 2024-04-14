@@ -11,7 +11,7 @@ matplotlib.use('TkAgg')
 os.environ["PANDASAI_API_KEY"] = "$2a$10$b7Q3yDy7YeFeW.VIWj4b8OmWzKN19C16GxAiTsh57MQ/timN8MLvm"
 
 API_KEY = st.secrets["GOOGLE_PALM2"]
-llm =BambooLLM()
+llm =BambooLLM(api_key="$2a$10$b7Q3yDy7YeFeW.VIWj4b8OmWzKN19C16GxAiTsh57MQ/timN8MLvm")
 
 
 st.title('Upload Your CSV File!!')
