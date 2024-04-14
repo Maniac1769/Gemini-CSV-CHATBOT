@@ -19,7 +19,7 @@ if uploaded_file:
     st.write(df.head())
 
     prompt = st.text_area("Enter Your Prompt")
-    prompt="The given csv is a classroom attendance csv with columns ['Enrollment','Name' ] and rest of the columns are dates , each row has a students name enrollment no. and 1s and 0s for if they were present or absent on that day keeping that in mind answer this :"+prompt
+    prompt="The given csv is a classroom attendance csv with columns ['Enrollment','Name(name is in ['Name'] format) ] and rest of the columns are dates , each row has a students name enrollment no. and 1s and 0s for if they were present or absent on that day keeping that in mind answer this :"+prompt
     df = SmartDataframe(df, config={"llm": llm})
 
     if st.button("Generate"):
