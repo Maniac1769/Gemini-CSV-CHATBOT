@@ -8,6 +8,7 @@ import matplotlib
 
 matplotlib.use('TkAgg')
 
+os.environ["PANDASAI_API_KEY"] = "YOUR_API_KEY"
 
 API_KEY = st.secrets["GOOGLE_PALM2"]
 llm = GooglePalm(api_key=API_KEY)
